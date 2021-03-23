@@ -5,9 +5,11 @@ const bodyParser = require('body-parser')
 const Updateclient = require('./models/Updateclient')
 
 
-// - Config
+// - Config express
 // - Template Engine
+// - function express.static para os arquivos staticos
     app.engine('handlebars', handlebars({defaultLayout: 'main'}))
+    app.use(express.static('public'))
     app.set('view engine', 'handlebars')
 //Body-Parser
     app.use(bodyParser.urlencoded({extended: false}))

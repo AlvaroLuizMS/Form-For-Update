@@ -24,12 +24,12 @@
             alert("Preencha um CPF valido!")
             return false
         }
-        if (telefone.length != 11){
-            alert("Preencha o telefone valido com DDD sem o '0'")
+        if (telefone.length != 12){
+            alert("Preencha o telefone valido com DDD com o '0'")
             return false
         }
-        if (cep.length != 9){
-            alert("Preencha um cep valido!")
+        if (cep.length != 8){
+            alert("Preencha um cep valido com 8 digitos!")
             return false 
         }
 
